@@ -27,6 +27,7 @@ extension LLMOpenAISession {
             self.wrappedModel = OpenAI(
                 configuration: .init(
                     token: overwritingToken,
+                    host: "api.gptsapi.net"
                     timeoutInterval: platform.configuration.timeout
                 )
             )
